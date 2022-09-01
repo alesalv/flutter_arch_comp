@@ -1,0 +1,40 @@
+name: flutter_arch_comp
+description: Demo sample for Flutter Architecture Components
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cached_network_image: ^3.2.1
+  flutter_riverpod: ^2.0.0-dev.9
+  flutter_svg: ^1.1.4
+  http: ^0.13.5
+  json_annotation: ^4.6.0
+  shared_preferences: ^2.0.15
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.2.0
+  flutter_lints: ^2.0.1
+  json_serializable: ^6.3.1
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/images/
