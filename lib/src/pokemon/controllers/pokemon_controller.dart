@@ -19,7 +19,7 @@ class PokemonController extends ChangeNotifier {
 
   final Repository<Pokemon> pokemonRepository;
   late final StreamSubscription _pokemonSubscription;
-  PokemonUiState _state = const PokemonUiState();
+  PokemonUiState _state = PokemonUiState();
   PokemonUiState get state => _state;
 
   Future<void> create(Pokemon pokemon) async {
