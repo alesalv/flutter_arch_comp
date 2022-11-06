@@ -37,6 +37,17 @@ void main() {
       expect(() => pokemonUiState.pokemon.add(const PokemonItemUiState()),
           throwsUnsupportedError);
     });
+
+    test('should not allow to modify isFetchingPokemon directly', () {
+      final pokemonUiState = PokemonUiState(isFetchingPokemon: true);
+
+      expect(pokemonUiState.isFetchingPokemon, true);
+      // This is not even a proper test, but it's left here to show that
+      // commenting out the following line doesn't compile, so it's not
+      // possible to mutate any primitive in any class marked as @immutable
+      // pokemonUiState.isFetchingPokemon = false;
+      expect(true, true);
+    });
   });
 }
 
