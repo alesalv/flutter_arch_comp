@@ -5,11 +5,11 @@ import '../../models/data/pokemon.dart';
 /// PokemonUiState represents the UI state for the pokemon page
 @immutable
 class PokemonUiState {
-  const PokemonUiState({
-    this.pokemon = const [],
+  PokemonUiState({
+    pokemon,
     this.isFetchingPokemon = false,
     this.errorMsg = '',
-  });
+  }) : pokemon = (pokemon == null) ? const [] : List.unmodifiable(pokemon);
   final List<PokemonItemUiState> pokemon;
   final bool isFetchingPokemon;
   final String errorMsg;
