@@ -20,7 +20,7 @@ void main() {
       SharedPreferences.setMockInitialValues({});
 
       final ds = PokemonLocalDataSource();
-      ds.createAll(kFakePokemon);
+      await ds.createAll(kFakePokemon);
 
       final updatedHeight = kFakePokemon[0].height + 70;
       final updated = PokemonApiModel(
