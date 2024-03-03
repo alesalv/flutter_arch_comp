@@ -4,12 +4,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../controllers/pokemon_controller.dart';
 import '../../models/data/pokemon.dart';
 
-class ActionsFabsRow extends StatelessWidget {
-  const ActionsFabsRow({required this.read, Key? key}) : super(key: key);
-  final Reader read;
+class ActionsFabsRow extends ConsumerWidget {
+  const ActionsFabsRow({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
@@ -17,18 +16,18 @@ class ActionsFabsRow extends StatelessWidget {
             heroTag: "buttonCreate",
             child: const Icon(Icons.add),
             onPressed: () =>
-                read(pokemonControllerProvider).create(const Pokemon())),
+                ref.read(pokemonControllerProvider).create(const Pokemon())),
         const SizedBox(width: 16),
         FloatingActionButton(
             heroTag: "buttonDelete",
             child: const Icon(Icons.remove),
             onPressed: () =>
-                read(pokemonControllerProvider).delete(const Pokemon().id)),
+                ref.read(pokemonControllerProvider).delete(const Pokemon().id)),
         const SizedBox(width: 16),
         FloatingActionButton(
             heroTag: "buttonRefresh",
             child: const Icon(Icons.refresh),
-            onPressed: () => read(pokemonControllerProvider).refresh()),
+            onPressed: () => ref.read(pokemonControllerProvider).refresh()),
       ],
     );
   }

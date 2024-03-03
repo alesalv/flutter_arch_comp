@@ -31,14 +31,14 @@ class _PokemonPageState extends ConsumerState<PokemonPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Pokemon'),
-        actions: <Widget>[ActionsMenuButton(read: ref.read)],
+        actions: <Widget>[ActionsMenuButton()],
       ),
       body: Stack(children: [
         _PokemonList(),
         _LoadingIndicator(),
         _ErrorIndicator(),
       ]),
-      floatingActionButton: ActionsFabsRow(read: ref.read),
+      floatingActionButton: ActionsFabsRow(),
     );
   }
 
