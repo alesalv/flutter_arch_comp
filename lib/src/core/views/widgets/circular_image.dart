@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 
 /// CircularImage represents an image rounded by a circular border
 class CircularImage extends StatelessWidget {
-  const CircularImage({required this.imageUrl, required this.size, Key? key})
-      : super(key: key);
+  const CircularImage({required this.imageUrl, required this.size, super.key});
   final String imageUrl;
   final double size;
 

@@ -7,7 +7,7 @@ import '../ui_states/pokemon_ui_state.dart';
 /// PokemonCard represents a card to show some pokemon information, like an
 /// icon, the name, its weight and height
 class PokemonCard extends StatelessWidget {
-  const PokemonCard(this.pokemon, {Key? key}) : super(key: key);
+  const PokemonCard(this.pokemon, {super.key});
 
   final PokemonItemUiState pokemon;
 

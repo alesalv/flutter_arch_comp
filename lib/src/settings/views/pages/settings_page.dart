@@ -9,7 +9,7 @@ import '../../controllers/settings_controller.dart';
 /// When a user changes a setting, the SettingsController is updated and
 /// Widgets that listen to the SettingsController are rebuilt.
 class SettingsPage extends ConsumerWidget {
-  const SettingsPage({Key? key}) : super(key: key);
+  const SettingsPage({super.key});
 
   static const routeName = 'settings';
 

@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../settings/controllers/settings_controller.dart';
 
 class SplashPage extends ConsumerStatefulWidget {
-  const SplashPage({Key? key}) : super(key: key);
+  const SplashPage({super.key});
 
   static const routeName = '/';
 

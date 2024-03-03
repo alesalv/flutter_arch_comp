@@ -7,7 +7,7 @@ import '../widgets/loading_indicator.dart';
 
 /// Displays detailed information about a pokemon
 class PokemonDetailsPage extends StatelessWidget {
-  const PokemonDetailsPage({Key? key}) : super(key: key);
+  const PokemonDetailsPage({super.key});
 
   static const routeName = 'pokemon_details';
 
@@ -106,8 +106,7 @@ class _ErrorIndicator extends ConsumerWidget {
 }
 
 class _Tile extends StatelessWidget {
-  const _Tile({required this.title, required this.content, Key? key})
-      : super(key: key);
+  const _Tile({required this.title, required this.content});
   final String title;
   final String content;
   @override

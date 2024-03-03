@@ -4,7 +4,7 @@ import '../../../pokemon/views/pages/pokemon_page.dart';
 import '../../../settings/views/pages/settings_page.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   static const routeName = 'home';
 

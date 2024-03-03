@@ -4,7 +4,7 @@ import 'package:flutter_arch_comp/src/pokemon/models/repositories/pokemon_reposi
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ActionsMenuButton extends ConsumerWidget {
-  const ActionsMenuButton({Key? key}) : super(key: key);
+  const ActionsMenuButton({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

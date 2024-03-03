@@ -11,7 +11,7 @@ import '../widgets/pokemon_card.dart';
 /// PokemonPage represents a page to displays a list of pokemon, showing a
 /// loading indicator for fetching operations and an error indicator for errors
 class PokemonPage extends ConsumerStatefulWidget {
-  const PokemonPage({Key? key}) : super(key: key);
+  const PokemonPage({super.key});
 
   static const routeName = 'pokemon_page';
 

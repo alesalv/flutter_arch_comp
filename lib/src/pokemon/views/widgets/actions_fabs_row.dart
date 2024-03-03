@@ -5,7 +5,7 @@ import '../../controllers/pokemon_controller.dart';
 import '../../models/data/pokemon.dart';
 
 class ActionsFabsRow extends ConsumerWidget {
-  const ActionsFabsRow({Key? key}) : super(key: key);
+  const ActionsFabsRow({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
