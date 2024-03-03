@@ -19,8 +19,10 @@ dependencies:
   cached_network_image: ^3.3.1
   # https://pub.dev/packages/flutter_riverpod
   flutter_riverpod: ^2.4.10
-  flutter_svg: ^1.1.4
-  http: ^0.13.5
+  # https://pub.dev/packages/flutter_svg
+  flutter_svg: ^2.0.10+1
+  # https://pub.dev/packages/http
+  http: ^1.2.1
   json_annotation: ^4.6.0
   shared_preferences: ^2.0.15
 
