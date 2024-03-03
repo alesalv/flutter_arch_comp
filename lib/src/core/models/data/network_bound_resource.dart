@@ -22,7 +22,7 @@ abstract class NetworkBoundResource<T> {
       _fetchFromNetwork(localResource);
     } else {
       /// success
-      setValue(Resource.success(localResource.data!));
+      setValue(Resource.success(localResource.data as T));
     }
   }
 
@@ -35,11 +35,11 @@ abstract class NetworkBoundResource<T> {
     final remoteResource = await loadFromServer();
 
     if (Status.success == remoteResource.status) {
-      await persistToDb(remoteResource.data!);
+      await persistToDb(remoteResource.data as T);
       final persisted = await loadFromDb();
 
       /// success
-      setValue(Resource.success(persisted.data!));
+      setValue(Resource.success(persisted.data as T));
     } else {
       /// error
       setValue(Resource.error(remoteResource.msg,
