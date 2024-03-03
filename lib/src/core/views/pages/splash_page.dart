@@ -10,10 +10,10 @@ class SplashPage extends ConsumerStatefulWidget {
   static const routeName = '/';
 
   @override
-  ConsumerState<SplashPage> createState() => _SplashViewState();
+  ConsumerState<SplashPage> createState() => _SplashPageState();
 }
 
-class _SplashViewState extends ConsumerState<SplashPage> {
+class _SplashPageState extends ConsumerState<SplashPage> {
   @override
   void initState() {
     super.initState();
@@ -33,7 +33,9 @@ class _SplashViewState extends ConsumerState<SplashPage> {
   Future<void> _afterSplash(BuildContext context) async {
     // initialize the settings controller
     await ref.read(settingsControllerProvider).loadSettings();
-
+    if (!context.mounted) {
+      return;
+    }
     Navigator.restorablePushNamed(context, HomePage.routeName);
   }
 }
