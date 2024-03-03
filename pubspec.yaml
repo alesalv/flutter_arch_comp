@@ -23,7 +23,8 @@ dependencies:
   flutter_svg: ^2.0.10+1
   # https://pub.dev/packages/http
   http: ^1.2.1
-  json_annotation: ^4.6.0
+  # https://pub.dev/packages/json_annotation
+  json_annotation: ^4.8.1
   shared_preferences: ^2.0.15
 
 dev_dependencies:
