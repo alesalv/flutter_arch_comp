@@ -31,7 +31,7 @@ void main() {
     });
 
     test('should not allow to add pokemon directly', () {
-      final pokemonUiState = PokemonUiState(pokemon: []);
+      final pokemonUiState = PokemonUiState(pokemon: const []);
 
       expect(pokemonUiState.pokemon.length, 0);
       expect(() => pokemonUiState.pokemon.add(const PokemonItemUiState()),
