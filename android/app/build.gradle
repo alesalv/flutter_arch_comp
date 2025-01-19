@@ -23,15 +23,18 @@ if (flutterVersionName == null) {
 }
 
 android {
+    namespace "com.example.flutter_arch_comp"
     compileSdkVersion 34
+    ndkVersion "27.0.12077973"
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        // Sets Java compatibility to Java 21
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
     }
 
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '21'
     }
 
     sourceSets {
@@ -62,5 +65,5 @@ flutter {
 
 dependencies {
     // note: version after : must match kotlin's version defined in android/settings.gradle
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:2.0.20"
 }
