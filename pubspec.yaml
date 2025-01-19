@@ -16,27 +16,27 @@ dependencies:
     sdk: flutter
 
   # https://pub.dev/packages/cached_network_image
-  cached_network_image: ^3.3.1
+  cached_network_image: ^3.4.0
   # https://pub.dev/packages/flutter_riverpod
-  flutter_riverpod: ^2.4.10
+  flutter_riverpod: ^2.6.1
   # https://pub.dev/packages/flutter_svg
   flutter_svg: ^2.0.10+1
   # https://pub.dev/packages/http
-  http: ^1.2.1
+  http: ^1.2.2
   # https://pub.dev/packages/json_annotation
-  json_annotation: ^4.8.1
+  json_annotation: ^4.9.0
   # https://pub.dev/packages/shared_preferences
-  shared_preferences: ^2.2.2
+  shared_preferences: ^2.2.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   # https://pub.dev/packages/build_runner
-  build_runner: ^2.4.8
+  build_runner: ^2.4.9
   # https://pub.dev/packages/flutter_lints
-  flutter_lints: ^3.0.1
+  flutter_lints: ^3.0.2
   # https://pub.dev/packages/json_serializable
-  json_serializable: ^6.7.1
+  json_serializable: ^6.8.0
 
 flutter:
   uses-material-design: true
