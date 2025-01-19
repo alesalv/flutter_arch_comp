@@ -1,0 +1,17 @@
+{
+  "dart.flutterSdkPath": ".fvm/versions/3.27.1",
+  "search.exclude": {
+    "**/.fvm": true,
+    "**/*.freezed.dart": true,
+    "**/*.g.dart": true
+  },
+  "files.watcherExclude": {
+    "**/.fvm": true,
+    "**/*.freezed.dart": true,
+    "**/*.g.dart": true
+  },
+  "files.exclude": {
+    "**/*.freezed.dart": true,
+    "**/*.g.dart": true
+  },
+}
